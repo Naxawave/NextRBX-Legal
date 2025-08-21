@@ -4,62 +4,102 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Términos y Condiciones - Next RBX</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      margin: 0;
-      padding: 20px;
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
+    :root{
+      --bg:#f9f9f9;
+      --card:#ffffff;
+      --text:#333;
+      --title:#222;
+      --brand:#1a73e8;
+      --muted:#666;
+      --shadow:0 2px 6px rgba(0,0,0,.08);
+      --radius:14px;
     }
-    h1, h2, h3 {
-      color: #222;
+    *{box-sizing:border-box}
+    body{
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+      margin:0;
+      padding:20px;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
     }
-    header {
-      text-align: center;
-      margin-bottom: 30px;
+    header{
+      max-width:900px;
+      margin:0 auto 24px;
+      text-align:center;
     }
-    section {
-      max-width: 800px;
-      margin: 0 auto 40px;
-      background: white;
-      padding: 25px 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    h1,h2{
+      color:var(--title);
+      display:flex;align-items:center;gap:10px;
+      justify-content:center;
+      margin:0 0 6px 0;
     }
-    a {
-      color: #1a73e8;
-      text-decoration: none;
+    h1 i,h2 i{color:var(--brand)}
+    .sub{
+      color:var(--muted);
+      margin:0;
+      font-size:.95rem;
     }
-    a:hover {
-      text-decoration: underline;
+    .logo-placeholder{
+      width:120px;height:120px;border-radius:28px;
+      background: #343434;
+      margin:0 auto 14px;
+      box-shadow:var(--shadow);
+      display:flex;align-items:center;justify-content:center;
+      color:#7a7a7a;font-weight:600;letter-spacing:.5px;
     }
-    footer {
-      text-align: center;
-      font-size: 0.9em;
-      color: #666;
-      padding: 15px 10px;
+    .logo-placeholder img{
+      width: 100%;
     }
-    @media (max-width: 600px) {
-      body {
-        padding: 10px;
-      }
-      section {
-        padding: 20px 15px;
-      }
+
+    .logo-text{
+       font-family: "Righteous", sans-serif;
+    }
+    
+    section{
+      max-width:900px;
+      margin:0 auto 26px;
+      background:var(--card);
+      padding:26px 24px;
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+    section > p strong{white-space:nowrap}
+    ol{padding-left:22px;margin:12px 0 0}
+    li{margin-bottom:14px}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    footer{
+      max-width:900px;margin:10px auto 0;
+      text-align:center;color:var(--muted);font-size:.92rem;
+      padding:14px 8px;
+    }
+    @media (max-width:600px){
+      body{padding:12px}
+      section{padding:20px 16px}
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Términos y Condiciones y Política de Privacidad</h1>
-    <p>Next RBX - Última actualización: 14 de agosto de 2025</p>
+    <div class="logo-placeholder">
+        <img src="https://naxawave.github.io/Next_Storage/imageResources/img-1.png">
+    </div>
+    <h2 class="logo-text">Naxawave Studios</h2>
+
+    <h1><i class="ri-file-list-3-line"></i> Términos y Condiciones y Política de Privacidad</h1>
+    <p class="sub">Next RBX - Última actualización: 14 de agosto de 2025</p>
   </header>
 
   <section id="terminos">
-    <h2>Términos y Condiciones de Next RBX</h2>
+    <h2><i class="ri-article-line"></i> Términos y Condiciones de Next RBX</h2>
     <p><strong>Última actualización:</strong> 14 de agosto de 2025</p>
 
     <ol>
@@ -124,11 +164,38 @@
         Si tienes dudas, comentarios o solicitudes sobre estos Términos, puedes contactarnos en:<br />
         <a href="mailto:naxawave.studios@gmail.com">naxawave.studios@gmail.com</a>
       </li>
+
+      <li>
+        <strong>Propiedad de los cursos</strong><br />
+        Los cursos son propiedad de los creadores correspondientes en la seccion del autor, pueden entrar cursos de 3eros o propios de Naxawave Studios,
+      </li>
+
+      <li>
+        <strong>Protección de recursos y cambios de contenido</strong><br />
+        Protegeremos los recursos dentro de nuestra aplicacion ante cualquier mal uso de las mismas de forma externa a la plataforma, y podemos cambiar el contenido total de la plataforma
+      </li>
+
+      <li>
+        <strong>Uso</strong><br />
+        Queda prohibido la subida de contenido explicito, religioso o gubernamental dentro de la plataforma, esta misma esta hecha con fines educativos
+      </li>
+
+      <li>
+        <strong>Aplicación sujeta a cambios inesperados</strong><br />
+        La aplicacion puede estar sugetas a cambios inesperados con retrasos de notificacion
+      </li>
+
+      <li>
+        <strong>Notificaciones a partir de la versión 1.14.5</strong><br />
+        A partir de la version 1.14.5 de la aplicacion se les notificara con un banner o notificacion tipo push sobre el cambio o actualizacion de politicas de la app
+      </li>
+      <!-- ====== FIN DE TUS CLÁUSULAS AÑADIDAS ====== -->
     </ol>
   </section>
 
+  <!-- === PRIVACIDAD (CONTENIDO ORIGINAL, INTACTO) + NOTA TUYA DE CAMBIOS INESPERADOS === -->
   <section id="privacidad">
-    <h2>Política de Privacidad de Next RBX</h2>
+    <h2><i class="ri-shield-user-line"></i> Política de Privacidad de Next RBX</h2>
     <p><strong>Última actualización:</strong> 14 de agosto de 2025</p>
 
     <ol>
@@ -180,6 +247,12 @@
         Si tienes preguntas o solicitudes relacionadas con tu privacidad o el manejo de tus datos, puedes contactarnos en:<br />
         <a href="mailto:naxawave.studios@gmail.com">naxawave.studios@gmail.com</a>
       </li>
+
+
+      <li>
+        <strong>Aplicación sujeta a cambios inesperados</strong><br />
+        La aplicacion puede estar sugetas a cambios inesperados con retrasos de notificacion
+      </li>
     </ol>
   </section>
 
@@ -188,4 +261,3 @@
   </footer>
 </body>
 </html>
-
